@@ -32,5 +32,14 @@ namespace Bakery.Tests
       int result = newBread.BreadPrice();
       Assert.AreEqual(5, result);
     }
+
+    [TestMethod]
+    public void BreadPrice_GetPriceOfTwoLoaves_Price()
+    {
+      int numberOfLoaves = 2;
+      Bread newBread = new Bread(numberOfLoaves);
+      int result = newBread.BreadPrice();
+      Assert.AreEqual(10, result);
+    }
   }
 }
