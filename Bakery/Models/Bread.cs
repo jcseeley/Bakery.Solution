@@ -12,13 +12,21 @@ namespace Bakery.Models
 
     public int BreadPrice()
     {
-      if (NumberOfLoaves == 3)
+      if (NumberOfLoaves <= 2)
       {
-        return 10;
+        return NumberOfLoaves * 5;
+      }
+      else if (NumberOfLoaves % 3 == 0)
+      {
+        return NumberOfLoaves / 3 * 10;
+      }
+      else if (NumberOfLoaves % 3 == 2)
+      {
+        return (NumberOfLoaves - 2) / 3 * 10 + 10;
       }
       else
       {
-        return NumberOfLoaves * 5;
+        return (NumberOfLoaves - 1) / 3 * 10 + 5;
       }
     }
   }
