@@ -14,7 +14,16 @@ namespace Bakery
       Bread userBread = new Bread(numberOfLoaves);
       Pastry userPastry = new Pastry(numberOfPastries);
       int result = userBread.BreadPrice() + userPastry.PastryPrice();
-      Console.WriteLine("The total for your order is $" + result);
+      Console.WriteLine("\nThe total for your order is $" + result + ".\n\nWould you like to place another order?\nType 'Y' for yes or 'N' for no.");
+      string response = Console.ReadLine();
+      if (response == "y" || response == "Y")
+      {
+        Main();
+      }
+      else
+      {
+        Console.WriteLine("Thank you for visiting Pierre's!");
+      }
     }
   }
 }
