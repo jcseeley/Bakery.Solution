@@ -12,7 +12,14 @@ namespace Bakery.Models
 
     public int BreadPrice()
     {
-      return NumberOfLoaves * 5;
+      if (NumberOfLoaves == 3)
+      {
+        return 10;
+      }
+      else
+      {
+        return NumberOfLoaves * 5;
+      }
     }
   }
 }
