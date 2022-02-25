@@ -12,6 +12,10 @@ namespace Bakery
       int numberOfLoaves = int.Parse(Console.ReadLine());
       Console.WriteLine("And how many pastries for you today?");
       int numberOfPastries = int.Parse(Console.ReadLine());
+      Bread userBread = new Bread(numberOfLoaves);
+      Pastry userPastry = new Pastry(numberOfPastries);
+      int result = userBread.BreadPrice() + userPastry.PastryPrice();
+      Console.WriteLine("The total for your order is $" + result);
     }
   }
 }
