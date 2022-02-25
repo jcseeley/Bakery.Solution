@@ -1,5 +1,6 @@
 using Bakery.Models;
 using System;
+using System.Threading;
 
 namespace Bakery
 {
@@ -19,6 +20,7 @@ namespace Bakery
       int numberOfPastries = int.Parse(Console.ReadLine());
       Bread userBread = new Bread(numberOfLoaves);
       Pastry userPastry = new Pastry(numberOfPastries);
+      CalculatingOrder();
       int result = userBread.BreadPrice() + userPastry.PastryPrice();
       Console.ForegroundColor = ConsoleColor.Green;
       Console.WriteLine("\nThe total for your order is $" + result + ".\n");
@@ -33,6 +35,15 @@ namespace Bakery
       {
         Console.ForegroundColor = ConsoleColor.Blue;
         Console.WriteLine("Thank you for visiting Pierre's!\n");
+      }
+
+      static void CalculatingOrder()
+      {
+        for (int i = 0; i <= 100; i++)
+        {
+          Console.Write($"\rCalculating total... {i}%");
+          Thread.Sleep(20);
+        }
       }
     }
   }
