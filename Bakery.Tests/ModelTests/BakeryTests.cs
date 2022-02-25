@@ -106,5 +106,14 @@ namespace Bakery.Tests
       int result = newPastry.PastryPrice();
       Assert.AreEqual(5, result);
     }
+
+    [TestMethod]
+    public void PastryPrice_GetPriceOfMoreThanThreePastries_Price()
+    {
+      int numberOfPastries = 4;
+      Pastry newPastry = new Pastry(numberOfPastries);
+      int result = newPastry.PastryPrice();
+      Assert.AreEqual(7, result);
+    }
   }
 }
