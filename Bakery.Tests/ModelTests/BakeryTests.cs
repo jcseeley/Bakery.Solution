@@ -50,5 +50,14 @@ namespace Bakery.Tests
       int result = newBread.BreadPrice();
       Assert.AreEqual(10, result);
     }
+
+    [TestMethod]
+    public void BreadPrice_GetPriceOfMoreThanThreeLoaves_Price()
+    {
+      int numberOfLoaves = 4;
+      Bread newBread = new Bread(numberOfLoaves);
+      int result = newBread.BreadPrice();
+      Assert.AreEqual(15, result);
+    }
   }
 }
