@@ -9,5 +9,10 @@ namespace Bakery.Models
     {
       NumberOfLoaves = numberOfLoaves;
     }
+
+    public int BreadPrice(int numberOfLoaves)
+    {
+      return 1;
+    }
   }
 }
