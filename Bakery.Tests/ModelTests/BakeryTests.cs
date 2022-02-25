@@ -29,7 +29,7 @@ namespace Bakery.Tests
     {
       int numberOfLoaves = 1;
       Bread newBread = new Bread(numberOfLoaves);
-      int result = newBread.BreadPrice(numberOfLoaves);
+      int result = newBread.BreadPrice();
       Assert.AreEqual(5, result);
     }
   }
