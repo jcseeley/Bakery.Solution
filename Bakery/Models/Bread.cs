@@ -7,7 +7,7 @@ namespace Bakery.Models
     public int NumberOfLoaves { get; set; }
     public Bread(int numberOfLoaves)
     {
-      
+      NumberOfLoaves = numberOfLoaves;
     }
   }
 }
