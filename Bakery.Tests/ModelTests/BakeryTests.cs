@@ -25,7 +25,7 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void BreadPrice_GetPriceOfLoaves_Price()
+    public void BreadPrice_GetPriceOfOneLoaf_Price()
     {
       int numberOfLoaves = 1;
       Bread newBread = new Bread(numberOfLoaves);
@@ -87,6 +87,15 @@ namespace Bakery.Tests
       Pastry newPastry = new Pastry(numberOfPastries);
       int result = newPastry.PastryPrice();
       Assert.AreEqual(2, result);
+    }
+
+    [TestMethod]
+    public void PastryPrice_GetPriceOfTwoPastries_Price()
+    {
+      int numberOfPastries = 2;
+      Pastry newPastry = new Pastry(numberOfPastries);
+      int result = newPastry.PastryPrice();
+      Assert.AreEqual(4, result);
     }
   }
 }
