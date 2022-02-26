@@ -43,9 +43,9 @@ namespace Bakery
       static void CalculatingOrder()
       {
         int counter = 0;
-        for (int i = 0; i <= 47; i++)
+        for (int i = 0; i <= 44; i++)
         {
-          switch (counter % 47)
+          switch (counter % 44)
           {
             case 0: Console.Write($"\rD"); break;
             case 1: Console.Write($"\rDE"); break;
@@ -69,31 +69,28 @@ namespace Bakery
             case 19: Console.Write($"\rDETERMINING HOW MUCH"); break;
             case 20: Console.Write($"\rDETERMINING HOW MUCH "); break;
             case 21: Console.Write($"\rDETERMINING HOW MUCH '"); break;
-            case 22: Console.Write($"\rDETERMINING HOW MUCH 'B"); break;
-            case 23: Console.Write($"\rDETERMINING HOW MUCH 'BR"); break;
-            case 24: Console.Write($"\rDETERMINING HOW MUCH 'BRE"); break;
-            case 25: Console.Write($"\rDETERMINING HOW MUCH 'BREA"); break;
-            case 26: Console.Write($"\rDETERMINING HOW MUCH 'BREAD"); break;
-            case 27: Console.Write($"\rDETERMINING HOW MUCH 'BREAD'"); break;
-            case 28: Console.Write($"\rDETERMINING HOW MUCH 'BREAD' "); break;
-            case 29: Console.Write($"\rDETERMINING HOW MUCH 'BREAD' Y"); break;
-            case 30: Console.Write($"\rDETERMINING HOW MUCH 'BREAD' YO"); break;
-            case 31: Console.Write($"\rDETERMINING HOW MUCH 'BREAD' YOU"); break;
-            case 32: Console.Write($"\rDETERMINING HOW MUCH 'BREAD' YOU "); break;
-            case 33: Console.Write($"\rDETERMINING HOW MUCH 'BREAD' YOU O"); break;
-            case 34: Console.Write($"\rDETERMINING HOW MUCH 'BREAD' YOU OW"); break;
-            case 35: Console.Write($"\rDETERMINING HOW MUCH 'BREAD' YOU OWE"); break;
-            case 36: Console.Write($"\rDETERMINING HOW MUCH 'BREAD' YOU OWE "); break;
-            case 37: Console.Write($"\rDETERMINING HOW MUCH 'BREAD' YOU OWE U"); break;
-            case 38: Console.Write($"\rDETERMINING HOW MUCH 'BREAD' YOU OWE US"); break;
-            case 39: Console.Write($"\rDETERMINING HOW MUCH 'BREAD' YOU OWE US"); break;
-            case 40: Console.Write($"\rDETERMINING HOW MUCH 'BREAD' YOU OWE US H"); break;
-            case 41: Console.Write($"\rDETERMINING HOW MUCH 'BREAD' YOU OWE US HA"); break;
-            case 42: Console.Write($"\rDETERMINING HOW MUCH 'BREAD' YOU OWE US HA "); break;
-            case 43: Console.Write($"\rDETERMINING HOW MUCH 'BREAD' YOU OWE US HA H"); break;
-            case 44: Console.Write($"\rDETERMINING HOW MUCH 'BREAD' YOU OWE US HA HA"); break;
-            case 45: Console.Write($"\rDETERMINING HOW MUCH 'BREAD' YOU OWE US HA HA H"); break;
-            case 46: Console.Write($"\rDETERMINING HOW MUCH 'BREAD' YOU OWE US HA HA HA"); break;
+            case 22: Console.Write($"\rDETERMINING HOW MUCH 'D"); break;
+            case 23: Console.Write($"\rDETERMINING HOW MUCH 'DO"); break;
+            case 24: Console.Write($"\rDETERMINING HOW MUCH 'DOU"); break;
+            case 25: Console.Write($"\rDETERMINING HOW MUCH 'DOUG"); break;
+            case 26: Console.Write($"\rDETERMINING HOW MUCH 'DOUGH"); break;
+            case 27: Console.Write($"\rDETERMINING HOW MUCH 'DOUGH'"); break;
+            case 28: Console.Write($"\rDETERMINING HOW MUCH 'DOUGH' "); break;
+            case 29: Console.Write($"\rDETERMINING HOW MUCH 'DOUGH' Y"); break;
+            case 30: Console.Write($"\rDETERMINING HOW MUCH 'DOUGH' YO"); break;
+            case 31: Console.Write($"\rDETERMINING HOW MUCH 'DOUGH' YOU"); break;
+            case 32: Console.Write($"\rDETERMINING HOW MUCH 'DOUGH' YOU "); break;
+            case 33: Console.Write($"\rDETERMINING HOW MUCH 'DOUGH' YOU O"); break;
+            case 34: Console.Write($"\rDETERMINING HOW MUCH 'DOUGH' YOU OW"); break;
+            case 35: Console.Write($"\rDETERMINING HOW MUCH 'DOUGH' YOU OWE"); break;
+            case 36: Console.Write($"\rDETERMINING HOW MUCH 'DOUGH' YOU OWE "); break;
+            case 37: Console.Write($"\rDETERMINING HOW MUCH 'DOUGH' YOU OWE H"); break;
+            case 38: Console.Write($"\rDETERMINING HOW MUCH 'DOUGH' YOU OWE HA"); break;
+            case 39: Console.Write($"\rDETERMINING HOW MUCH 'DOUGH' YOU OWE HA "); break;
+            case 40: Console.Write($"\rDETERMINING HOW MUCH 'DOUGH' YOU OWE HA H"); break;
+            case 41: Console.Write($"\rDETERMINING HOW MUCH 'DOUGH' YOU OWE HA HA"); break;
+            case 42: Console.Write($"\rDETERMINING HOW MUCH 'DOUGH' YOU OWE HA HA H"); break;
+            case 43: Console.Write($"\rDETERMINING HOW MUCH 'DOUGH' YOU OWE HA HA HA"); break;
           }
           counter++;
           Thread.Sleep(125);
