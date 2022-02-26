@@ -21,9 +21,11 @@ namespace Bakery
       Bread userBread = new Bread(numberOfLoaves);
       Pastry userPastry = new Pastry(numberOfPastries);
       CalculatingOrder();
-      int result = userBread.BreadPrice() + userPastry.PastryPrice();
+      int breadTotal = userBread.BreadPrice();
+      int pastryTotal = userPastry.PastryPrice();
+      int result = breadTotal + pastryTotal;
       Console.ForegroundColor = ConsoleColor.Green;
-      Console.WriteLine("\nThe total for your order is $" + result + ".\n");
+      Console.WriteLine("\n" + userBread.NumberOfLoaves + " x Bread: $" + breadTotal + "\n" + userPastry.NumberOfPastries + " x Pastries: $" + pastryTotal + "\n--------------------" + "\nOrder Total: $" + result + "\n");
       Console.ForegroundColor = ConsoleColor.Yellow;
       Console.WriteLine("Would you like to place another order? Type 'Y' for yes or 'N' for no.");
       string response = Console.ReadLine();
