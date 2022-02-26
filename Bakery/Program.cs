@@ -39,11 +39,28 @@ namespace Bakery
 
       static void CalculatingOrder()
       {
-        for (int i = 0; i <= 100; i++)
+        int counter = 0;
+        for (int i = 0; i <= 30; i++)
         {
-          Console.Write($"\rCalculating total... {i}%");
-          Thread.Sleep(20);
+          switch (counter % 12)
+          {
+            case 0: Console.Write($"\rCal"); break;
+            case 1: Console.Write($"\r   cu"); break;
+            case 2: Console.Write($"\r     la"); break;
+            case 3: Console.Write($"\r       ting"); break;
+            case 4: Console.Write($"\rCalculating"); break;
+            case 5: Console.Write($"\r           "); break;
+            case 6: Console.Write($"\rCalculating ."); break;
+            case 7: Console.Write($"\r             "); break;
+            case 8: Console.Write($"\rCalculating . ."); break;
+            case 9: Console.Write($"\r               "); break;
+            case 10: Console.Write($"\rCalculating . . . "); break;
+            case 11: Console.Write($"\r                  "); break;
+          }
+          counter++;
+          Thread.Sleep(100);
         }
+        Console.Write($"\r               ");
       }
     }
   }
