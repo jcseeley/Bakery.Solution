@@ -40,25 +40,36 @@ namespace Bakery
       static void CalculatingOrder()
       {
         int counter = 0;
-        for (int i = 0; i <= 30; i++)
+        for (int i = 0; i <= 25; i++)
         {
-          switch (counter % 12)
+          switch (counter % 23)
           {
-            case 0: Console.Write($"\rCal"); break;
-            case 1: Console.Write($"\r   cu"); break;
-            case 2: Console.Write($"\r     la"); break;
-            case 3: Console.Write($"\r       ting"); break;
-            case 4: Console.Write($"\rCalculating"); break;
-            case 5: Console.Write($"\r           "); break;
-            case 6: Console.Write($"\rCalculating ."); break;
-            case 7: Console.Write($"\r             "); break;
-            case 8: Console.Write($"\rCalculating . ."); break;
-            case 9: Console.Write($"\r               "); break;
-            case 10: Console.Write($"\rCalculating . . . "); break;
-            case 11: Console.Write($"\r                  "); break;
+            case 0: Console.Write($"\r"); break;
+            case 1: Console.Write($"\rC"); break;
+            case 2: Console.Write($"\rCA"); break;
+            case 3: Console.Write($"\rCAL"); break;
+            case 4: Console.Write($"\rCALC"); break;
+            case 5: Console.Write($"\rCALCU"); break;
+            case 6: Console.Write($"\rCALCUL"); break;
+            case 7: Console.Write($"\rCALCULA"); break;
+            case 8: Console.Write($"\rCALCULAT"); break;
+            case 9: Console.Write($"\rCALCULATI"); break;
+            case 10: Console.Write($"\rCALCULATIN"); break;
+            case 11: Console.Write($"\rCALCULATING"); break;
+            case 12: Console.Write($"\rCALCULATIN"); break;
+            case 13: Console.Write($"\rCALCULATI"); break;
+            case 14: Console.Write($"\rCALCULAT"); break;
+            case 15: Console.Write($"\rCALCULA"); break;
+            case 16: Console.Write($"\rCALCUL"); break;
+            case 17: Console.Write($"\rCALCU"); break;
+            case 18: Console.Write($"\rCALC"); break;
+            case 19: Console.Write($"\rCAL"); break;
+            case 20: Console.Write($"\rCA"); break;
+            case 21: Console.Write($"\rC"); break;
+            case 22: Console.Write($"\r"); break;
           }
           counter++;
-          Thread.Sleep(100);
+          Thread.Sleep(75);
         }
         Console.Write($"\r               ");
       }
