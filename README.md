@@ -2,7 +2,8 @@
 
 #### By Jase Seeley
 
-#### Place an order for bread and pastries and receive the total.
+#### Epicodus Week #8 Independent Code Review: Test Driven Development with C#  
+* Place an order for bread and pastries and receive the total.
 
 ## Technologies Used
 * C#
